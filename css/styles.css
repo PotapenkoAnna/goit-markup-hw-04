@@ -132,6 +132,16 @@ img {
   color: var(--secondary-text-main);
 }
 
+.contact-heder-icon {
+  margin-right: 10px;
+  border: 1px solid #757575;
+}
+
+.contact-heder-icon:hover,
+.contact-heder-icon:focus {
+  fill: var(--accent-color);
+}
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
@@ -215,6 +225,28 @@ img {
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+ 
+.icone-antenna::before {
+  background-image: url(../images/antenna.svg);
+  background-size: 66px 70px;  
+
+}
+
+.icone-clock::before {
+  background-image: url(../images/clock.svg);
+  background-size: 66px 70px;
+}
+
+.icone-diagram::before {
+  background-image: url(../images/diagram.svg);
+  background-size: 70px 54px;
+
+}
+
+.icone-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+  background-size: 70px 70px;
 }
 
 .content-title {
@@ -327,7 +359,43 @@ img {
   color: var(--secondary-text-main);
 }
 
-/*=======Контакты=========*/
+/*.social-list-item {
+  display: block;
+ padding-top: 16px;
+ padding-bottom: 30px;
+  margin-right: 10px;
+} */
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+  cursor: pointer; 
+}  
+
+.social-list-icon {
+  fill: currentColor;   
+}
+ 
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+   
+.social-list-link:hover .social-list-icon {
+  fill: #ffffff;  
+}
+
+/*=======Контакты=========*/ 
 
 .accentlogo-contacts {
   color: var(--text-hero-footer);
