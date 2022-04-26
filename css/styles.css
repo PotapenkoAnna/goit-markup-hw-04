@@ -405,6 +405,45 @@ img {
   color: var(--primary-text-main);
 }
 
+.clients-item {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px; 
+}
+
+.client-list {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-list-link {
+  display: flex;
+  margin: 16px 32px 16px 32px;
+}
+
+.client-icon {
+  display: block;
+  fill: #AFB1B8;
+
+}
+
+.client-list:hover,
+.client-list:focus {
+  border-color: var(--accent-color);
+}
+
+.client-list:hover .client-icon ,
+.client-list:focus .client-icon {
+fill: var(--accent-color);
+}
+
+ 
 /*=======Контакты=========*/ 
 
 .accentlogo-contacts {
@@ -447,6 +486,63 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-box {
+  margin-right: 70px;
+  min-width: 230px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  
+    } 
+
+.footer-social-text {
+  font-weight: 700; 
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-hero-footer);
+  margin-bottom: 20px;
+}
+
+.footer-social-item {
+  display: flex;
+  width: 206px;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.footer-social-list {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background: rgba(255, 255, 255, 0.1);;
+border-radius: 50%;
+}
+
+.footer-social-link {
+display: flex;
+fill: var(--text-hero-footer);
+align-items: center;
+justify-content: space-between;
+} 
+
+.footer-social-list:hover,
+.footer-social-list:focus {
+  background-color: var(--accent-color);
+cursor: pointer;
+}
+  
 
 /*======Портфолио======*/
 
